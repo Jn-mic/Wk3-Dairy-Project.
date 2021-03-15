@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JackT||Dairy||Farm</title>
+</head>
+<body>
+    <div id="container"> 
+
+        <div id="top">
+            <h1 class="e">Jack-T Farm</h1> 
+            <u><h4 class="e1">Earnings calculator</h4></u>
+        </div>
+        
+        <h3 class="my-user">My-user Inputs:</h3>
+        <p class="">Production per cow, in every shed.</p>
+        <div class="">
+            <div class="jackTform">
+                <span class="" id="inPutShade">Cows in Shed 1</span>
+                <input id="shed_one" type="text"placeholder="0.00 Ltrs." >
+            </div>
+            <div class="">
+                <span class="jackTform" id="inPutShade">Cows in Shed 2</span>
+                <input id="shed_two" type="text" placeholder="0.00 Ltrs.">
+            </div>
+            <div class="lea">
+                <span class="jackTform" id="inPutShade">Cows in Shed 3</span>
+                <input id="shed_three" type="text" placeholder="0.00 Ltrs">
+            </div>
+            <div class=""> 
+                <span class="jackTform" id="inPutShade">Cows in Shed 4.</span>
+                <input id="shed_four" type="text" placeholder="0.00 Ltrs">
+            </div>
+          </div>
+
+          <p>Buying rates and days</p>
+          <div class="">
+            <div class="jackForm">
+                <span class="j1" id="inPutShade">Buying Rate</span>
+                <input id="buying_rate" type="text" placeholder="0.00 shs.">
+            </div>
+            <div class="">
+                <span class="jackTform" id="inPutShade">Duration in days</span>
+                <input id="time" type="text" placeholder="0.00 days.">
+            </div>
+          </div>
+          
+          <button class="jbtn" type="submit" onclick="totalProduction()">Calculate</button>
+          <br><br><hr class="hr">
+          <h2 class="dryAn"> Daily Earnings</h2>
+          <table id="table">
+            <thead id="th">
+              <tr>
+                <th ></th>
+                <th >Shed </th>
+                <th >Total daily Earnings </th>
+              </tr>
+            </thead>
+            <tbody id="tb">
+              <tr id="tr">
+                <th>1</th>
+                <td id="shed_a"></td>
+                <td id="shed_a_prod">0.00</td>
+              </tr>
+              <tr>
+                <th >2</th>
+                <td id="shed_b"></td>
+                <td id="shed_b_prod">0.00</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td id="shed_c"></td>
+                <td id="shed_c_prod">0.00</td>
+              </tr>
+              <tr>
+                <th >4</th>
+                <td id="shed_d"></td>
+                <td id="shed_d_prod">0.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <br><br><hr class="hr">
+         <div class="">
+            <h2 class="cr">Seasonal Earnings</h2>
+            <p class="" id="plant_income"></p>
+         </div>
+        
+          <br><hr>
+          <h2 class="cr">Annual Report</h2>
+          <ul id="annual_report">
+          </ul>
+           <!-- document.getElementById('annual_report').innerHTML = `Total income for ${month} is: ${(days_in_months[month] * total_production) * buying_rate}`; -->
+          <br><hr>
+          <h2 class="cr">Compare Reports</h2>
+          <div class="headers">
+              <u><h4>Report when buying rate is 45</h4></u>
+              <u><h4>Report when buying rate is 49.6</h4></u>
+          </div>
+          <div class="cr" >
+            <ul id="compare_report1">
+                Report for value 45 <br>
+            </ul>
+            <ul id="compare_report2">
+                Report for value 49.6 <br>
+            </ul>
+          </div>
+
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
