@@ -1,9 +1,9 @@
 #container{
     background-image: url(https://cdn.pixabay.com/photo/2017/05/16/17/33/holstein-cattle-2318436_960_720.jpg);
     background-color: aquamarine;
-    background-size: inherit;
+    background-size: cover;
     background-attachment: fixed;
-    
+    background-repeat: no-repeat;
 }
 #top{
     color: blue;
